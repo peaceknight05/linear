@@ -35,7 +35,7 @@ Returns a float that is the gradient of a line perpendicular to the line.
 Returns a float that is the length (or euclidean distance) of the line.
 ##### Line.mdist
 Returns a float that is the Manhattan (or block) distance of the line.
-##### Line.eqn()
+##### Line.lineEqn()
 Returns a string that is the equation of the line in "y = mx + c" format.
 **NOTE**: may be in "y = c", "y = mx", "y = mx + c" or "y = mx - c" format.
 ### Vector

@@ -1,15 +1,12 @@
 from distutils.core import setup
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
-
 setup(
     name = 'lalgebra',
     packages = ['lalgebra'],
-    version = '0.0.2',
+    version = '0.0.4',
     license='MIT',
     description = 'Includes basic support for points, lines and vectors',
-    long_description=long_description,
+    long_description="See github page.",
     long_description_content_type="text/markdown",
     author = 'Jonathan Tan Jiayi',
     author_email = 'jonathantanatlol@gmail.com',
