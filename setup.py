@@ -8,7 +8,7 @@ setup(
     author = 'Jonathan Tan Jiayi',
     author_email = 'jonathantanatlol@gmail.com',
     url = 'https://github.com/peaceknight05/linear',
-    download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',
+    download_url = 'https://github.com/peaceknight05/linear/archive/v0.0.1-alpha.tar.gz',
     keywords = ['mathematics', 'linear algebra', 'algebra', 'topography', 'geometry', 'vectors', 'lines', 'points'],
     install_requires=[],
     classifiers=[
