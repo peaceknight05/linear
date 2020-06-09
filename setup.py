@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name = 'lalgebra',
     packages = ['lalgebra'],
-    version = '0.0.4',
+    version = '0.1.0',
     license='MIT',
     description = 'Includes basic support for points, lines and vectors',
     long_description="See github page.",
@@ -11,7 +11,7 @@ setup(
     author = 'Jonathan Tan Jiayi',
     author_email = 'jonathantanatlol@gmail.com',
     url = 'https://github.com/peaceknight05/linear',
-    download_url = 'https://github.com/peaceknight05/linear/archive/v0.0.2-alpha.tar.gz',
+    download_url = 'https://github.com/peaceknight05/linear/archive/v0.1.0-alpha.tar.gz',
     keywords = ['mathematics', 'linear algebra', 'algebra', 'topography', 'geometry', 'vectors', 'lines', 'points'],
     install_requires=[],
     classifiers=[

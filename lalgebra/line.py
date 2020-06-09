@@ -28,3 +28,9 @@ class Line:
 				return f'y = {m}x + {c}'
 			else:
 				return f'y = {m}x - {c*-1}'
+
+	def isParallel(self, l):
+		return self.gradient == l.gradient
+
+	def isPerp(self, l):
+		return self.pgrad == l.gradient

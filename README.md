@@ -62,3 +62,16 @@ Returns a float that is the dot product of the Vector object and the other Vecto
 Returns a float that is the angle between the Vector object and the other Vector v.
 ##### Vector.scom(v)
 Returns a float that is the scalar component of the Vector object in the direction of the Vector v.
+### Polygon
+Initialise by calling ```Polygon([points...])``` where points is an array of Point objects (at least 3) that are the vertices of the object.
+Will throw a InvalidPolygonError if less than 3 points are given.
+Make sure the vertices are in anticlockwise order.
+#### Methods and Properties
+##### Polygon.vertices
+The vertices of the polygon in anti-clockwise order. A list of Point objects.
+##### Polygon.area
+The area od the polygon.
+**NOTE**: this only works if you entered the polygon vertices in anti-clockwise order.
+## Errors
+### InvalidPolygonError
+You entered less than two vertices when initialising a Polygon object.
