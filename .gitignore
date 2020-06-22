@@ -1,3 +1,5 @@
 
 MANIFEST
 dist/*
+lalgebra/test.py
+lalgebra/__pycache__
