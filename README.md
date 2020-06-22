@@ -14,6 +14,8 @@ The x coordinate.
 The y coordinate.
 ##### Point.coord
 A string representing the vector in (x, y) format.
+##### Point.asList
+Returns the Point object as a list in the format [x, y].
 ### Line
 Initialise by calling ```Line(a, b)``` where a and b are Point objects representing the start and end point of the line.
 #### Methods and Properties
@@ -50,18 +52,27 @@ The y coordinate.
 A string that is the coordinate of the vector in "(x, y)" format.
 ##### Vector.length
 Returns a float that is the length of the vector or ||v|| where v is the vector.
+##### Vector.asList
+Returns the Vector object as a list in the format [x, y].
 ##### Vector.term(v, w)
 Returns a tuple (a, b) where a and b are from the format "K = aV + bW" where K is the Vector object, V and W are the other two vector objects and a and b are scalars. This function is used to express the vector in terms of other vectors.
 ##### Vector.smult(s)
 Returns a Vector object that is the product of the scalar s and the Vector object.
 ##### Vector.vadd(v)
 Returns a Vector object that is the sum of the Vector object and the other Vector v.
+##### Vector.vsub(v)
+Returns a Vector object that is the difference of the Vector object and the other Vector v.
 ##### Vector.dprod(v)
 Returns a float that is the dot product of the Vector object and the other Vector v.
 ##### Vector.angle(v)
 Returns a float that is the angle between the Vector object and the other Vector v.
 ##### Vector.scom(v)
 Returns a float that is the scalar component of the Vector object in the direction of the Vector v.
+#### Constants
+##### VectorConstants.unitx
+Returns a Vector object that is the unit x vector (aka <1,0>)
+##### VectorConstants.unity
+Returns a Vector object that is the unit y vector (aka <0,1>)
 ### Polygon
 Initialise by calling ```Polygon([points...])``` where points is an array of Point objects (at least 3) that are the vertices of the object.
 Will throw a InvalidPolygonError if less than 3 points are given.
@@ -70,8 +81,9 @@ Make sure the vertices are in anticlockwise order.
 ##### Polygon.vertices
 The vertices of the polygon in anti-clockwise order. A list of Point objects.
 ##### Polygon.area
-The area od the polygon.
-**NOTE**: this only works if you entered the polygon vertices in anti-clockwise order.
+The area of the polygon.
+##### Polygon.centroid
+The centroid of the polygon as a Point object.
 ## Errors
 ### InvalidPolygonError
 You entered less than three vertices when initialising a Polygon object.

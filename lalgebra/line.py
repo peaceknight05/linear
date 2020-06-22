@@ -1,4 +1,4 @@
-from lalgebra.point import Point
+from point import Point
 import math
 
 class Line:
