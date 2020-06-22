@@ -74,4 +74,4 @@ The area od the polygon.
 **NOTE**: this only works if you entered the polygon vertices in anti-clockwise order.
 ## Errors
 ### InvalidPolygonError
-You entered less than two vertices when initialising a Polygon object.
+You entered less than three vertices when initialising a Polygon object.
